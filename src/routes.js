@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SingUp from './pages/SingUp';
 import SingIn from './pages/SingIn';
-import Event from './pages/Event/Event';
+import Event from './pages/Event';
 
 const Routes = () => (
     <BrowserRouter>

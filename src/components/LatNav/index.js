@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles.css';
 import TouchAppIcon from '@material-ui/icons/TouchApp';
 import PersonIcon from '@material-ui/icons/Person';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
@@ -21,7 +21,7 @@ const Dropdown = ({show}) =>
 
 <div className="nav-comp"> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
       <div className="nav-comp"> <PersonIcon fontSize="Large"/><br></br>Perfil</div>
-      <Link to="/Event"><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
+      <Link to="/Event" style={{ textDecoration: 'none' }}><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
       <div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
       <div className="nav-comp"> <LanguageIcon fontSize="Large"/><br></br>Wilian Criador de Galaxias</div>
      
@@ -51,5 +51,3 @@ export default class Parent extends React.Component {
     );
   }
 }
-
-

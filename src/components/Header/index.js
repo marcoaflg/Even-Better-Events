@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     },
     inputInput: {
         padding: theme.spacing(1, 1, 1, 0),
-        // vertical padding + font size from searchIcon
+
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
         transition: theme.transitions.create('width'),
         width: '100%',
@@ -76,9 +76,7 @@ const useStyles = makeStyles((theme) => ({
 
 function ElevationScroll(props) {
     const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
+
     const trigger = useScrollTrigger({
       disableHysteresis: true,
       threshold: 0,
@@ -143,10 +141,10 @@ export default function Header(props) {
                                 inputProps={{ 'aria-label': 'search' }}
                             />
                         </div>
-                        <Link to="/SingIn">
+                        <Link to="/SingIn" style={{ textDecoration: 'none' }}>
                         <Button>Entrar</Button>
                         </Link>
-                        <Link to="/SingUp">
+                        <Link to="/SingUp" style={{ textDecoration: 'none' }}>
                         <Button>Cadastrar</Button>
                         </Link>
                     </Toolbar>

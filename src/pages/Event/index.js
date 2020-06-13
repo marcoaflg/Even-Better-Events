@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import Header from '../../components/Header';
-import LatNav from '../../components/LatNav/LatNav';
+import LatNav from '../../components/LatNav';
 import BlocCards from '../../components/Cards/BlocCards';
 
 
