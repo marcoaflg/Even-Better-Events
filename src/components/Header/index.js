@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -142,8 +143,12 @@ export default function Header(props) {
                                 inputProps={{ 'aria-label': 'search' }}
                             />
                         </div>
+                        <Link to="/SingIn">
                         <Button>Entrar</Button>
+                        </Link>
+                        <Link to="/SingUp">
                         <Button>Cadastrar</Button>
+                        </Link>
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>

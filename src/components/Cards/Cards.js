@@ -1,7 +1,6 @@
 import React from 'react';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import image1 from '../../assets/img/Banner-Evento-Sao-Paulo-Lancamento-Livro.jpg'
-import image2 from '../../assets/img/banner02.jpg';
     
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';

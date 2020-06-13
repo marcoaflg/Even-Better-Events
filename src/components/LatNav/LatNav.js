@@ -6,6 +6,7 @@ import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import LanguageIcon from '@material-ui/icons/Language';
 import Arrow from '@material-ui/icons/ArrowForwardIos';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,7 +21,7 @@ const Dropdown = ({show}) =>
 
 <div className="nav-comp"> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
       <div className="nav-comp"> <PersonIcon fontSize="Large"/><br></br>Perfil</div>
-      <div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div>
+      <Link to="/Event"><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
       <div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
       <div className="nav-comp"> <LanguageIcon fontSize="Large"/><br></br>Wilian Criador de Galaxias</div>
      
