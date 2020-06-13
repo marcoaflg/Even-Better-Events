@@ -17,7 +17,7 @@ ReactDOM.render(
   <MuiThemeProvider theme={theme}>
   <React.StrictMode>
   <CssBaseline />
-    <Home />
+    <Event />
   </React.StrictMode>
   </MuiThemeProvider>,
   document.getElementById('root')

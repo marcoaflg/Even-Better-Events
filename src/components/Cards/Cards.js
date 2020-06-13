@@ -33,7 +33,7 @@ export default function EventCards(props) {
             component="img"
             alt="Imagem Evento"
             height="140"
-            image={image2}
+            image={image1}
             title={props.titleimg}
           />
           <CardContent>

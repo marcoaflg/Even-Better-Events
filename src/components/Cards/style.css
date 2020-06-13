@@ -1,3 +1,20 @@
 .EventCards{
     margin:10px;
 }
+.Event{
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.Mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:10px;
+    width: 80%;
+    margin-left:11%;
+    background-color:rgb(17, 140, 105,0.2);
+}
