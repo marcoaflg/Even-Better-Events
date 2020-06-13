@@ -1,7 +1,7 @@
 
 
 .LatNav{
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 0%;
   /*background-image: url(./Components/img/teste.png);*/
@@ -11,10 +11,7 @@
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  
-  
- 
-  
+  z-index: 1;
   
 }
 .nav-but{

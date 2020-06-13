@@ -3,6 +3,7 @@ import './styles.css';
 import Header from '../../components/Header';
 import Slider from '../../components/Slider';
 import LatNav from '../../components/LatNav/LatNav';
+import EventCards from '../../components/Cards/Cards';
 
 function Home() {
   return (
@@ -10,6 +11,9 @@ function Home() {
       <Header />
       <Slider />
       <LatNav />
+      
+    
+      
     </div>
   );
 }

@@ -7,11 +7,13 @@ import image2 from '../../assets/img/banner02.jpg';
 class Slider extends Component {
   render() {
     return (
-        <BackgroundSlider
-          images={[image1, image2]}
-          duration={10}
-          transition={2}
-        />
+      <div className="Slider">
+          <BackgroundSlider
+            images={[image1, image2]}
+            duration={10}
+            transition={2}
+          />
+        </div>
     )
   }
 }
