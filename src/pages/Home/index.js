@@ -10,7 +10,6 @@ function Home() {
       <Header />
       <Slider />
       <LatNav />
-      
     </div>
   );
 }

@@ -13,6 +13,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import LatNav from '../../components/LatNav';
 
 function Copyright() {
   return (
@@ -133,6 +134,7 @@ export default function SignUp() {
       <Box mt={5}>
         <Copyright />
       </Box>
+      <LatNav />
     </Container>
   );
 }

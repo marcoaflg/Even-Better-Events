@@ -11,6 +11,7 @@ import Logo from '../../assets/img/logoebevetor1.png';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import LatNav from '../../components/LatNav';
 
 function Copyright() {
   return (
@@ -108,6 +109,7 @@ export default function SignIn() {
       <Box mt={8}>
         <Copyright />
       </Box>
+      <LatNav />
     </Container>
   );
 }
