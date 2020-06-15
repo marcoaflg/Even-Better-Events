@@ -63,7 +63,7 @@ export default function SignIn() {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label="Endereço de email"
             name="email"
             autoComplete="email"
             autoFocus
@@ -74,7 +74,7 @@ export default function SignIn() {
             required
             fullWidth
             name="password"
-            label="Password"
+            label="Senha"
             type="password"
             id="password"
             autoComplete="current-password"
@@ -107,7 +107,6 @@ export default function SignIn() {
         </form>
       </div>
       <Box mt={8}>
-        <Copyright />
       </Box>
       <LatNav />
     </Container>

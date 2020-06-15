@@ -21,7 +21,7 @@ const Dropdown = ({show}) =>
 
 <div className="nav-comp"> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
       <div className="nav-comp"> <PersonIcon fontSize="Large"/><br></br>Perfil</div>
-      <Link to="/Event" style={{ textDecoration: 'none' }}><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
+      <Link to="/Event" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
       <div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
       <div className="nav-comp"> <LanguageIcon fontSize="Large"/><br></br>Wilian Criador de Galaxias</div>
      

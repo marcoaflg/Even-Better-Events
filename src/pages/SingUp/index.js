@@ -68,7 +68,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 id="firstName"
-                label="First Name"
+                label="Nome"
                 autoFocus
               />
             </Grid>
@@ -78,7 +78,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 id="lastName"
-                label="Last Name"
+                label="Sobrenome"
                 name="lastName"
                 autoComplete="lname"
               />
@@ -89,7 +89,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="Endereço de email"
                 name="email"
                 autoComplete="email"
               />
@@ -100,7 +100,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="Senha"
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -132,7 +132,6 @@ export default function SignUp() {
         </form>
       </div>
       <Box mt={5}>
-        <Copyright />
       </Box>
       <LatNav />
     </Container>
