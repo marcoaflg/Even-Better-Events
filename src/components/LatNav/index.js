@@ -46,7 +46,6 @@ export default class Parent extends React.Component {
       <div className="LatNav">
         <Dropdown show={this.state.dropdownVisible} />
         <NavButton onClick={this.toggleDropdown} />
-    
       </div>
     );
   }

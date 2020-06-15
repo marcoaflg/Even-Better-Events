@@ -4,8 +4,6 @@ import { BrowserRouter } from "react-router-dom"
 import './index.css';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-// import Home from './pages/Home';
-// import Event from './pages/Event/Event';
 import Routes from './routes';
 
 const theme = createMuiTheme({

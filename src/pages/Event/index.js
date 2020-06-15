@@ -7,8 +7,6 @@ import BlocCards from '../../components/Cards/BlocCards';
 
 function Event() {
 
-   
-
     return (
         <div>
             <Header />
