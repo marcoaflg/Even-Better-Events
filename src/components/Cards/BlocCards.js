@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './styles.css';
 import EventCards from '../../components/Cards/Cards';
 import { makeStyles } from '@material-ui/core/styles';
 import Resto from '@material-ui/icons/Restore';
