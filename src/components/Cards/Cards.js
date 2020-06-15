@@ -1,7 +1,7 @@
 import React from 'react';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import image1 from '../../assets/img/Banner-Evento-Sao-Paulo-Lancamento-Livro.jpg'
-    
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -14,9 +14,10 @@ import './styles.css';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 300,
-    maxHeight:350,
-  
+    maxWidth: 400,
+    maxHeight: 500,
+
+
   },
 });
 
@@ -27,17 +28,18 @@ export default function EventCards(props) {
     <div className="EventCards">
 
       <Card className={classes.root}>
+        
         <CardActionArea>
           <CardMedia
             component="img"
             alt="Imagem Evento"
-            height="140"
-            image={image1}
+            height="230"
+            image={props.img}
             title={props.titleimg}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-             {props.TittleEvent}
+              {props.TittleEvent}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {props.DescEvent}
@@ -45,21 +47,24 @@ export default function EventCards(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <Button size="small" color="primary">
-          <FavoriteIcon />
+          
+            <Button size="small" color="primary">
+              <FavoriteIcon />
+            </Button>
+            <Button size="small" color="primary">
+              Compartilhar
           </Button>
-          <Button size="small" color="primary">
-            Compartilhar
+            <Button size="small" color="primary">
+              Saber mais
           </Button>
-          <Button size="small" color="primary">
-            Saber mais
-          </Button>
-         
+          
+
         </CardActions>
+        
 
       </Card>
 
     </div>
-    
+
   );
 }

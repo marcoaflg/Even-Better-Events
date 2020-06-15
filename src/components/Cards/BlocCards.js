@@ -13,6 +13,15 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Ocultar from '@material-ui/icons/VisibilityOff';
 
+import image1 from '../../assets/img/Banner-Evento-Sao-Paulo-Lancamento-Livro.jpg'
+import image2 from '../../assets/img/past.events/empreendedorismo.jpeg'
+import image3 from '../../assets/img/past.events/esportes.natureza.jpeg'
+import image4 from '../../assets/img/past.events/outsystems.jpeg'
+import image5 from '../../assets/img/past.events/hackfest.jpeg'
+import image6 from '../../assets/img/past.events/frontendday.png'
+
+
+
 
 
 function TabPanel(props) {
@@ -100,10 +109,21 @@ function BlocCards() {
                 <TabPanel value={value} index={0}>
                     <div className="Event">
 
-                        <EventCards image="image1" titleimg="coloque aqui o que quer que exiba como titulo da imagem" TittleEvent="TESTANDO AGORA" DescEvent="Este evento é alguma coisa" />
-                        <EventCards titleimg="AAAA " TittleEvent="AADFASDFA" DescEvent="22" />
-                        <EventCards titleimg="BBBB" TittleEvent="AADSFAFAFA" DescEvent="3AAAAAAAAAAAAAAAA " />
-                        <EventCards titleimg="3CCCC3" TittleEvent="AAADSFSAFAFASDFAF" DescEvent="3AAAAAAA " />
+                        <EventCards img={image1}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="A nova geração da inteligencia"
+                            DescEvent="Este evento é alguma coisa" />
+
+                        <EventCards img={image2}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="Empreendedorismo"
+                            DescEvent="Este evento é alguma coisa" />
+
+                        <EventCards img={image3}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="Esportes e Natureza"
+                            DescEvent="Este evento é alguma coisa" />
+
 
                     </div>
 
@@ -112,16 +132,30 @@ function BlocCards() {
                 <TabPanel value={value} index={1}>
                     <div className="Event">
 
-                        <EventCards titleimg="coloque aqui o que quer que exiba como titulo da imagem" TittleEvent="TEAAAAAAAA" DescEvent="Este evento é alguma coisa" />
+                    <EventCards img={image4}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="Front End Day"
+                            DescEvent="Este evento é alguma coisa" />
 
+                        <EventCards img={image5}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="QDG Foz"
+                            DescEvent="Este evento é alguma coisa" />
+
+                        <EventCards img={image6}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="Hack Fest"
+                            DescEvent="Este evento é alguma coisa" />
 
                     </div>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
                     <div className="Event">
 
-                        <EventCards titleimg="coloque aqui o que quer que exiba como titulo da imagem" TittleEvent="TEAAAAAAAA" DescEvent="Este evento é alguma coisa" />
-                        <EventCards titleimg="AAAA " TittleEvent="AADFASDFA" DescEvent="22" />
+                        <EventCards img={image3}
+                            titleimg="coloque aqui o que quer que exiba como titulo da imagem"
+                            TittleEvent="Esportes e Natureza"
+                            DescEvent="Este evento é alguma coisa" />
                     </div>
                 </TabPanel>
 
