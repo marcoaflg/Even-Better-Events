@@ -5,6 +5,7 @@ import SingUp from './pages/SingUp';
 import SingIn from './pages/SingIn';
 import Event from './pages/Event';
 import Perfil from './pages/Perfil';
+import DataPage from './pages/DataPage';
 
 
 const Routes = () => (
@@ -15,6 +16,7 @@ const Routes = () => (
             <Route path="/SingIn" component={SingIn} />
             <Route path="/Event" component={Event} />
             <Route path="/Perfil" component={Perfil} />
+            <Route path="/DataPage" component={DataPage} />
         </ Switch>
     </BrowserRouter>
 );

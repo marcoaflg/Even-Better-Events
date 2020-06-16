@@ -12,7 +12,7 @@ import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: '15vw',
+    maxWidth: '200px',
     marginLeft:'1vw',
   },
 });
