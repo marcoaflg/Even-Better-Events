@@ -9,24 +9,23 @@ import Arrow from '@material-ui/icons/ArrowForwardIos';
 import { Link } from 'react-router-dom';
 
 
+const NavButton = ({ onClick }) =>
+  <button className="nav-but2" onClick={onClick}>
 
+    <Arrow fontSize="Small" />
 
-const NavButton = ({onClick}) => 
-  <button className="nav-but2" 
-   onClick={onClick}>
-      <Arrow fontSize="Small" />
   </button>
 
-const Dropdown = ({show}) => 
-<div style={{visibility: show ? "visible" : "hidden",}}>
+const Dropdown = ({ show }) =>
+  <div style={{ visibility: show ? "visible" : "hidden", zIndex: show ? "1" : "-1"}}>
 
-<div className="nav-comp2"> <TouchAppIcon fontSize="Large"/><br></br>Meu perfil</div>
-      <Link to="/Perfil" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp2"> <PersonIcon fontSize="Large"/><br></br>Meus dados</div></ Link>
-      <Link to="/Event" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp2"> <EventAvailableIcon fontSize="Large"/><br></br>Histórico de eventos</div></ Link>
-      <div className="nav-comp2"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
-      <div className="nav-comp2"> <LanguageIcon fontSize="Large"/><br></br>Sei lá o que escrever</div>
-     
-</div>
+    <Link to="/Perfil" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <TouchAppIcon fontSize="Large" /><br></br>Meu perfil</div></Link>
+    <Link to="/DataPage" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <PersonIcon fontSize="Large" /><br></br>Meus dados</div></ Link>
+    <Link to="/Event" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <EventAvailableIcon fontSize="Large" /><br></br>Histórico de eventos</div></ Link>
+    <div className="nav-comp2"> <CardMembershipIcon fontSize="Large" /><br></br>Certificados</div>
+    <div className="nav-comp2"> <LanguageIcon fontSize="Large" /><br></br>Sei lá o que escrever</div>
+
+  </div>
 
 
 
@@ -40,14 +39,15 @@ export default class Parent extends React.Component {
     dropdownVisible: !state.dropdownVisible,
   }));
 
-  
 
   render() {
+ 
     return (
-      <div className="LatNav2">
+      <div className="LatNav2" style={{ zIndex: this.state.dropdownVisible ? "1" : "-1"}}>
         <Dropdown show={this.state.dropdownVisible} />
         <NavButton onClick={this.toggleDropdown} />
-    
+
+
       </div>
     );
   }

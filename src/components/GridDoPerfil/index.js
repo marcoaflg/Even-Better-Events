@@ -6,7 +6,7 @@ import "../../components/GridDoPerfil/styles.css"
 import Avatar from '@material-ui/core/Avatar';
 import AvatarImg from '../../assets/img/avatar/vinicius.jpeg'
 import EventImg from '../../assets/img/past.events/hackfest.jpeg'
-import PreviewCard from '../GridDoPerfil/CardPreview'
+import PreviewCard from '../CardPreview'
 
 const useStyles = makeStyles((theme) => ({
     root: {
