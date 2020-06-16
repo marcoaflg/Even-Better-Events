@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
             display: 'block',
         },
         margin: 'auto',
-        textAlign: 'center',
+        textAlign: 'left',
         maxWidth: '50%',
         maxHeight: '70%',
     },

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import EventCards from '../../components/Cards/Cards';
-// import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Resto from '@material-ui/icons/Restore';
 import Favo from '@material-ui/icons/Favorite';
 import Local from '@material-ui/icons/LocationOn';
@@ -12,12 +12,14 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Ocultar from '@material-ui/icons/VisibilityOff';
+
 import image1 from '../../assets/img/Banner-Evento-Sao-Paulo-Lancamento-Livro.jpg'
 import image2 from '../../assets/img/past.events/empreendedorismo.jpeg'
 import image3 from '../../assets/img/past.events/esportes.natureza.jpeg'
 import image4 from '../../assets/img/past.events/outsystems.jpeg'
 import image5 from '../../assets/img/past.events/hackfest.jpeg'
 import image6 from '../../assets/img/past.events/frontendday.png'
+
 
 
 
@@ -57,29 +59,29 @@ function a11yProps(index) {
     };
 }
 
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         flexGrow: 1,
-//         backgroundColor: theme.palette.background.paper,
-//     },
-// }));
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        backgroundColor: theme.palette.background.paper,
+    },
+}));
 
 
 
 
 function BlocCards() {
 
-    // const useStyles = makeStyles({
-    //     root: {
+    const useStyles = makeStyles({
+        root: {
 
-    //     },
-    // });
-
-
+        },
+    });
 
 
 
-    // const classes = useStyles();
+
+
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
