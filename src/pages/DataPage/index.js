@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -38,13 +39,12 @@ function DataPage() {
           <Grid item xs={12}>
             <p>Todas as informações aqui solicitadas são para uso de validação do perfil, cadastro em eventos, certificação e emergencias médicas.<br />
             Em caso de dúvidas, contate a nossa equipe.</p>
-            </Grid>
+          </Grid>
           <Grid item xs={12}>
             <TextField
               fullWidth
               placeholder="Nome"
               type="text"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -54,17 +54,15 @@ function DataPage() {
               fullWidth
               placeholder="Descrição do perfil, títulos, conquistas, etc."
               multiline
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
-          
+
           <Grid item xs={3}>
             <TextField
               fullWidth
               placeholder="Cidade"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -73,7 +71,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Endereço"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -82,7 +79,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Nº"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -91,7 +87,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Bairro"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -101,7 +96,6 @@ function DataPage() {
               fullWidth
               placeholder="CEP"
               type="tel"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -112,10 +106,9 @@ function DataPage() {
               placeholder="(XX)"
               type="tel"
               inputProps={{
-                maxlength:"2",
+                maxlength: "2",
                 minlength: "2",
               }}
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -126,10 +119,9 @@ function DataPage() {
               placeholder="Telefone"
               type="tel"
               inputProps={{
-                maxlength:"9",
+                maxlength: "9",
                 minlength: "9",
               }}
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -138,7 +130,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="CPF"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -147,7 +138,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="RG"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -156,7 +146,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Cargo"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -165,7 +154,6 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Instituição de Ensino"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
@@ -174,12 +162,34 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Cuidados Médicos (diabetes, hipertensão, etc.)"
-              id="outlined-margin-none"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
-          
+          <Grid item xs={3}>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Voltar ao Perfil
+          </Button>
+          </Grid>
+          <Grid item xs={6}>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Salvar Alterações
+          </Button>
+          </Grid>
         </Grid>
       </div>
     </div>

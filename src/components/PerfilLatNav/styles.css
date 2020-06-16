@@ -21,11 +21,13 @@
     position: absolute;
     left: 2px;
     background-color: rgb(17, 140, 105,0.5);
+    z-index: 1;
   }
   
   .nav-but2:hover{
     background-color: rgb(102, 179, 77);
     transform: rotate(180deg);
+    z-index: 1;
     
   }
   

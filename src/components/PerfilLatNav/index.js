@@ -7,6 +7,7 @@ import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import LanguageIcon from '@material-ui/icons/Language';
 import Arrow from '@material-ui/icons/ArrowForwardIos';
 import { Link } from 'react-router-dom';
+import zIndex from '@material-ui/core/styles/zIndex';
 
 
 const NavButton = ({ onClick }) =>
@@ -17,7 +18,7 @@ const NavButton = ({ onClick }) =>
   </button>
 
 const Dropdown = ({ show }) =>
-  <div style={{ visibility: show ? "visible" : "hidden", zIndex: show ? "1" : "-1"}}>
+  <div style={{ visibility: show ? "visible" : "hidden"}}>
 
     <Link to="/Perfil" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <TouchAppIcon fontSize="Large" /><br></br>Meu perfil</div></Link>
     <Link to="/DataPage" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <PersonIcon fontSize="Large" /><br></br>Meus dados</div></ Link>
@@ -43,7 +44,7 @@ export default class Parent extends React.Component {
   render() {
  
     return (
-      <div className="LatNav2" style={{ zIndex: this.state.dropdownVisible ? "1" : "-1"}}>
+      <div className="LatNav2" style={{ zIndex: this.state.dropdownVisible ? "1" : "0"}}>
         <Dropdown show={this.state.dropdownVisible} />
         <NavButton onClick={this.toggleDropdown} />
 
