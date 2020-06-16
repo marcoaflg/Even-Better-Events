@@ -10,8 +10,9 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const NavButton = ({onClick}) => 
-  <button className="nav-but" 
+  <button className="nav-but2" 
    onClick={onClick}>
       <Arrow fontSize="Small" />
   </button>
@@ -19,11 +20,11 @@ const NavButton = ({onClick}) =>
 const Dropdown = ({show}) => 
 <div style={{visibility: show ? "visible" : "hidden",}}>
 
-<div className="nav-comp"> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
-      <Link to="/Perfil" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp"> <PersonIcon fontSize="Large"/><br></br>Perfil</div></ Link>
-      <Link to="/Event" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
-      <div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
-      <div className="nav-comp"> <LanguageIcon fontSize="Large"/><br></br>Wilian Criador de Galaxias</div>
+<div className="nav-comp2"> <TouchAppIcon fontSize="Large"/><br></br>Meu perfil</div>
+      <Link to="/Perfil" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp2"> <PersonIcon fontSize="Large"/><br></br>Meus dados</div></ Link>
+      <Link to="/Event" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp2"> <EventAvailableIcon fontSize="Large"/><br></br>Histórico de eventos</div></ Link>
+      <div className="nav-comp2"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
+      <div className="nav-comp2"> <LanguageIcon fontSize="Large"/><br></br>Sei lá o que escrever</div>
      
 </div>
 
@@ -43,7 +44,7 @@ export default class Parent extends React.Component {
 
   render() {
     return (
-      <div className="LatNav">
+      <div className="LatNav2">
         <Dropdown show={this.state.dropdownVisible} />
         <NavButton onClick={this.toggleDropdown} />
     
