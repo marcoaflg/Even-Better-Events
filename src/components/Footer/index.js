@@ -19,7 +19,7 @@ function Footer() {
   const iconSize = "lg";
 
     return (
-      <>
+      <div className="footer">
         <footer>
           <div className="conteudo-footer">
             <div className="container flex">
@@ -40,7 +40,7 @@ function Footer() {
           </div>
 
         </footer>
-      </>
+      </div>
     );
 }
 
