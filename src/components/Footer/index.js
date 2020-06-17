@@ -1,8 +1,18 @@
 import React from 'react';
 import './styles.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faYoutube, faLinkedinIn, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
+import FacebookIcon from '@material-ui/icons/Facebook';
+
+import YouTubeIcon from '@material-ui/icons/YouTube';
+
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+import InstagramIcon from '@material-ui/icons/Instagram';
+
+import TwitterIcon from '@material-ui/icons/Twitter';
+
+
 
 function Footer() {
 
@@ -15,16 +25,16 @@ function Footer() {
             <div className="container flex">
               <ul id="navegacao" className="footer-links flex">
                 <li><a href="#/">Ajuda e contato</a></li>
-                <li><a href="#/">Mapa do site</a></li>
-                <li><a href="#/">Vender na Unijobs</a></li>
-                <li><a href="#/">Noções básicas de como comprar</a></li>
+                <li><a href="#/">Cadastrar Evento</a></li>
+                <li><a href="#/">Sobre Certificação</a></li>
+                <li><a href="#/">Empresas parceiras</a></li>
               </ul>
               <ul id="redes-sociais" className="footer-links">
-                <li><a href="#/"><FontAwesomeIcon size={iconSize} icon={faFacebookF} /></a></li>
-                <li><a href="#/"><FontAwesomeIcon size={iconSize} icon={faYoutube} /></a></li>
-                <li><a href="#/"><FontAwesomeIcon size={iconSize} icon={faLinkedinIn} /></a></li>
-                <li><a href="#/"><FontAwesomeIcon size={iconSize} icon={faInstagram} /></a></li>
-                <li><a href="#/"><FontAwesomeIcon size={iconSize} icon={faTwitter} /></a></li>
+                <li><a href="#/"><FacebookIcon  fontSize='large'/></a></li>
+                <li><a href="#/"><YouTubeIcon  fontSize='large'/></a></li>
+                <li><a href="#/"><LinkedInIcon  fontSize='large'/></a></li>
+                <li><a href="#/"><InstagramIcon  fontSize='large'/></a></li>
+                <li><a href="#/"><TwitterIcon  fontSize='large'/></a></li>
               </ul>
             </div>
           </div>
