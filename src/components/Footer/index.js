@@ -16,8 +16,6 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 function Footer() {
 
-  const iconSize = "lg";
-
     return (
       <div className="footer">
         <footer>
