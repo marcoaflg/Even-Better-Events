@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import EventCards from '../../components/Cards/Cards';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import Resto from '@material-ui/icons/Restore';
 import Favo from '@material-ui/icons/Favorite';
 import Local from '@material-ui/icons/LocationOn';
@@ -59,29 +59,29 @@ function a11yProps(index) {
     };
 }
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//         flexGrow: 1,
+//         backgroundColor: theme.palette.background.paper,
+//     },
+// }));
 
 
 
 
 function BlocCards() {
 
-    const useStyles = makeStyles({
-        root: {
+    // const useStyles = makeStyles({
+    //     root: {
 
-        },
-    });
-
-
+    //     },
+    // });
 
 
 
-    const classes = useStyles();
+
+
+    // const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {

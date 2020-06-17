@@ -7,7 +7,6 @@ import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import LanguageIcon from '@material-ui/icons/Language';
 import Arrow from '@material-ui/icons/ArrowForwardIos';
 import { Link } from 'react-router-dom';
-import zIndex from '@material-ui/core/styles/zIndex';
 
 
 const NavButton = ({ onClick }) =>
