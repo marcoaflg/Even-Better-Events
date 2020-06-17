@@ -19,7 +19,7 @@ const NavButton = ({onClick}) =>
   </button>
 
 const Dropdown = ({show}) => 
-<div style={{visibility: show ? "visible" : "hidden"}}>
+<div style={{visibility: show ? "hidden" : "visible"}}>
 
 
 
@@ -32,7 +32,7 @@ const Dropdown = ({show}) =>
 <div className="nav-comp" onClick={(e) => { if (window.confirm('Voce tem certeza que quer confirmar presença neste evento??')) this.deleteItem(e)}}> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
       <Link to="/Perfil" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp"> <PersonIcon fontSize="Large"/><br></br>Perfil</div></ Link>
       <Link to="/Event" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
-      <div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
+      <Link to="/Certificates" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div></Link>
       <div className="nav-comp"> <LanguageIcon fontSize="Large"/><br></br>Wilian Criador de Galaxias</div>
      
 </div>
