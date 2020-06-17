@@ -104,7 +104,7 @@ function DataPage() {
           </Grid>
           <Grid item xs={3}>
             <TextField
-            required
+              required
               fullWidth
               placeholder="CEP"
               label="CEP"
@@ -115,7 +115,7 @@ function DataPage() {
           </Grid>
           <Grid item xs={1}>
             <TextField
-            required
+              required
               fullWidth
               placeholder="(XX)"
               label="(XX)"
@@ -130,11 +130,11 @@ function DataPage() {
           </Grid>
           <Grid item xs={2}>
             <TextField
-            required
+              required
               fullWidth
               placeholder="Telefone"
               type="tel"
-              label= "Telefone"
+              label="Telefone"
               inputProps={{
                 maxlength: "9",
                 minlength: "9",
@@ -145,7 +145,7 @@ function DataPage() {
           </Grid>
           <Grid item xs={3}>
             <TextField
-            required
+              required
               fullWidth
               placeholder="CPF"
               label="CPF"
@@ -155,7 +155,7 @@ function DataPage() {
           </Grid>
           <Grid item xs={3}>
             <TextField
-            required
+              required
               fullWidth
               placeholder="RG"
               label="RG"
@@ -167,7 +167,7 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Cargo"
-            label="Cargo"
+              label="Cargo"
               className={classes.textField}
               variant="outlined"
             />
@@ -183,7 +183,7 @@ function DataPage() {
           </Grid>
           <Grid item xs={12}>
             <TextField
-            required
+              required
               fullWidth
               placeholder="Cuidados Médicos (diabetes, hipertensão, etc.)"
               label="Cuidados médicos"
