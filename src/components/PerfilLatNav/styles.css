@@ -22,11 +22,12 @@
     left: 2px;
     background-color: rgb(17, 140, 105,0.5);
     z-index: 1;
+    transform: rotate(180deg);
   }
   
   .nav-but2:hover{
     background-color: rgb(102, 179, 77);
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     z-index: 1;
     
   }

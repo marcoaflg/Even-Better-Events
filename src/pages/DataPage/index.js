@@ -42,7 +42,9 @@ function DataPage() {
           </Grid>
           <Grid item xs={12}>
             <TextField
+              required
               fullWidth
+              label="Nome Completo"
               placeholder="Nome"
               type="text"
               className={classes.textField}
@@ -53,6 +55,7 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Descrição do perfil, títulos, conquistas, etc."
+              label="Descrição do perfil"
               multiline
               className={classes.textField}
               variant="outlined"
@@ -61,40 +64,50 @@ function DataPage() {
 
           <Grid item xs={3}>
             <TextField
+              required
               fullWidth
               placeholder="Cidade"
+              label="Cidade"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
           <Grid item xs={5}>
             <TextField
+              required
               fullWidth
               placeholder="Endereço"
+              label="Endereço"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
           <Grid item xs={1}>
             <TextField
+              required
               fullWidth
               placeholder="Nº"
+              label="Numero"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
           <Grid item xs={3}>
             <TextField
+              required
               fullWidth
               placeholder="Bairro"
+              label="Bairro"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
           <Grid item xs={3}>
             <TextField
+            required
               fullWidth
               placeholder="CEP"
+              label="CEP"
               type="tel"
               className={classes.textField}
               variant="outlined"
@@ -102,8 +115,10 @@ function DataPage() {
           </Grid>
           <Grid item xs={1}>
             <TextField
+            required
               fullWidth
               placeholder="(XX)"
+              label="(XX)"
               type="tel"
               inputProps={{
                 maxlength: "2",
@@ -115,9 +130,11 @@ function DataPage() {
           </Grid>
           <Grid item xs={2}>
             <TextField
+            required
               fullWidth
               placeholder="Telefone"
               type="tel"
+              label= "Telefone"
               inputProps={{
                 maxlength: "9",
                 minlength: "9",
@@ -128,16 +145,20 @@ function DataPage() {
           </Grid>
           <Grid item xs={3}>
             <TextField
+            required
               fullWidth
               placeholder="CPF"
+              label="CPF"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
           <Grid item xs={3}>
             <TextField
+            required
               fullWidth
               placeholder="RG"
+              label="RG"
               className={classes.textField}
               variant="outlined"
             />
@@ -146,6 +167,7 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Cargo"
+            label="Cargo"
               className={classes.textField}
               variant="outlined"
             />
@@ -154,14 +176,17 @@ function DataPage() {
             <TextField
               fullWidth
               placeholder="Instituição de Ensino"
+              label="Instituição de Ensino"
               className={classes.textField}
               variant="outlined"
             />
           </Grid>
           <Grid item xs={12}>
             <TextField
+            required
               fullWidth
               placeholder="Cuidados Médicos (diabetes, hipertensão, etc.)"
+              label="Cuidados médicos"
               className={classes.textField}
               variant="outlined"
             />
