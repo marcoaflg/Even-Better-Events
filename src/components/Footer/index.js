@@ -17,7 +17,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 function Footer() {
 
     return (
-      <div className="footer">
+     
         <footer>
           <div className="conteudo-footer">
             <div className="container flex">
@@ -38,7 +38,7 @@ function Footer() {
           </div>
 
         </footer>
-      </div>
+      
     );
 }
 
