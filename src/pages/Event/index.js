@@ -14,6 +14,7 @@ function Event() {
             <Header />
             <LatNav />
             <BlocCards />
+            
         </div>
     );
 }

@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 const NavButton = ({onClick}) => 
   <button className="nav-but" 
    onClick={onClick}>
@@ -19,7 +21,15 @@ const NavButton = ({onClick}) =>
 const Dropdown = ({show}) => 
 <div style={{visibility: show ? "visible" : "hidden"}}>
 
-<div className="nav-comp"> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
+
+
+
+
+
+
+
+
+<div className="nav-comp" onClick={(e) => { if (window.confirm('Voce tem certeza que quer confirmar presença neste evento??')) this.deleteItem(e)}}> <TouchAppIcon fontSize="Large"/><br></br>Confirmar presença</div>
       <Link to="/Perfil" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp"> <PersonIcon fontSize="Large"/><br></br>Perfil</div></ Link>
       <Link to="/Event" style={{ textDecoration: 'none' , color: 'white'}}><div className="nav-comp"> <EventAvailableIcon fontSize="Large"/><br></br>Eventos</div></ Link>
       <div className="nav-comp"> <CardMembershipIcon fontSize="Large"/><br></br>Certificados</div>
