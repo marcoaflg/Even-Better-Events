@@ -10,6 +10,7 @@ import "../Perfil/styles.css"
 import Avatar from '@material-ui/core/Avatar';
 import AvatarImg from '../../assets/img/avatar/vinicius.jpeg'
 import MiniCard from '../../components/MiniCard'
+import hackfestImg from '../../assets/img/past.events/hackfest.jpeg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -63,11 +64,37 @@ function Perfil() {
                     <Grid item xs={9}>
                     <Paper className={classes.paper} >
                             <Grid container spacing={1}>
-                                <Grid item xs={6} style={{backgroundColor: "white"}}>
-                                    <MiniCard />
+                                <Grid item xs={3} >
+                                    <MiniCard 
+                                        image= {hackfestImg}
+                                        title="Hackfest 2019"
+                                        link='../../RandomFiles/certificado.txt'
+                                        certificateName= 'Certificado.doc'
+                                    />
                                 </Grid>
-                                <Grid item xs={6}>
-                                    <Paper className={classes.paper2} ></Paper>
+                                <Grid item xs={3}>
+                                <MiniCard 
+                                        image= {hackfestImg}
+                                        title="Hackfest 2019"
+                                        link='../../RandomFiles/certificado.txt'
+                                        certificateName= 'Certificado.doc'
+                                    />
+                                </Grid>
+                                <Grid item xs={3}>
+                                <MiniCard 
+                                        image= {hackfestImg}
+                                        title="Hackfest 2019"
+                                        link='../../RandomFiles/certificado.txt'
+                                        certificateName= 'Certificado.doc'
+                                    />
+                                </Grid>
+                                <Grid item xs={3}>
+                                <MiniCard 
+                                        image= {hackfestImg}
+                                        title="Hackfest 2019"
+                                        link='../../RandomFiles/certificado.txt'
+                                        certificateName= 'Certificado.doc'
+                                    />
                                 </Grid>
                             </Grid>
                         </Paper>

@@ -25,22 +25,19 @@ export default function MiniCard(props) {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
+                    image={props.image}
+                    title="Fazer download do certificado"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                    <Typography gutterBottom variant="h6">
+                        {props.title}
                     </Typography>
 
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Download
-            </Button>
-                <Button size="small" color="primary">
-                    Ver evento
+                <Button size="small" color="primary" href={props.link} download={props.certificateName} >
+                    Baixar certificado
             </Button>
             </CardActions>
         </Card>
