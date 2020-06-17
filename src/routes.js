@@ -6,6 +6,7 @@ import SingIn from './pages/SingIn';
 import Event from './pages/Event';
 import Perfil from './pages/Perfil';
 import DataPage from './pages/DataPage';
+import Certificates from './pages/Certificates';
 
 
 const Routes = () => (
@@ -17,6 +18,7 @@ const Routes = () => (
             <Route path="/Event" component={Event} />
             <Route path="/Perfil" component={Perfil} />
             <Route path="/DataPage" component={DataPage} />
+            <Route path="/Certificates" component={Certificates} />
         </ Switch>
     </BrowserRouter>
 );

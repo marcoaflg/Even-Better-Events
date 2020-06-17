@@ -17,12 +17,12 @@ const NavButton = ({ onClick }) =>
   </button>
 
 const Dropdown = ({ show }) =>
-  <div style={{ visibility: show ? "visible" : "hidden"}}>
+  <div style={{ visibility: show ? "visible" : "hidden" }}>
 
     <Link to="/Perfil" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <TouchAppIcon fontSize="Large" /><br></br>Meu perfil</div></Link>
     <Link to="/DataPage" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <PersonIcon fontSize="Large" /><br></br>Meus dados</div></ Link>
     <Link to="/Event" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <EventAvailableIcon fontSize="Large" /><br></br>Histórico de eventos</div></ Link>
-    <div className="nav-comp2"> <CardMembershipIcon fontSize="Large" /><br></br>Certificados</div>
+    <Link to="/Certificates" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <CardMembershipIcon fontSize="Large" /><br></br>Meus certificados</div></Link>
     <div className="nav-comp2"> <LanguageIcon fontSize="Large" /><br></br>Sei lá o que escrever</div>
 
   </div>
@@ -44,10 +44,10 @@ export default class Parent extends React.Component {
 
     return (
       <div className="LatNav2" style={{ zIndex: this.state.dropdownVisible ? "1" : "0" }}>
+        
         <Dropdown show={this.state.dropdownVisible} />
-        <div styles= {{ tranform: "rotate(180deg)" }}>
-          <NavButton onClick={this.toggleDropdown} />
-        </div>
+        <NavButton onClick={this.toggleDropdown} />
+
       </div>
     );
   }

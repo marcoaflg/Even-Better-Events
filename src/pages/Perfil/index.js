@@ -16,14 +16,14 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: 20,
+    marginLeft: '3vw',
+    marginRight: '3vw',
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
     height: '100%',
-    marginLeft: '3vw',
-    marginRight: '3vw',
     zIndex: "0",
   },
   avatar: {
@@ -42,26 +42,26 @@ function Perfil() {
       <Header />
       <LatNav />
       <PerfilLatNav />
-      
+
       <div className={classes.root}>
         <Grid container spacing={1}>
           <Grid item xs={3}>
-            <Paper className={classes.paper} style={{ paddingRight: 0, marginRight: 0 }} >Estudante</Paper>
+            <Paper className={classes.paper} >Estudante</Paper>
           </Grid>
           <Grid item xs={9}>
-            <Paper className={classes.paper} style={{ paddingLeft: 0, marginLeft: 0 }} >Perfil</Paper>
+            <Paper className={classes.paper} >Perfil</Paper>
           </Grid>
           <Grid item xs={3}>
             <Avatar alt="User" className={classes.avatar} src={AvatarImg} />
           </Grid>
           <Grid item xs={9}>
-            <Paper className={classes.paper} style={{ paddingLeft: 0, marginLeft: 0 }} >Descrição do perfil<br /> Estudante de Engenharia de Software e entusiasta de arduíno e video-games</Paper>
+            <Paper className={classes.paper} >Descrição do perfil<br /> Estudante de Engenharia de Software e entusiasta de arduíno e video-games</Paper>
           </Grid>
           <Grid item xs={3}>
-            <Paper className={classes.paper} style={{ paddingRight: 0, marginRight: 0 }} >Vinicius Jacik</Paper>
+            <Paper className={classes.paper} >Vinicius Jacik</Paper>
           </Grid>
           <Grid item xs={9}>
-            <Paper className={classes.paper} style={{ paddingLeft: 0, marginLeft: 0 }}>Redes sociais</Paper>
+            <Paper className={classes.paper} >Redes sociais</Paper>
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.paper} style={{ display: 'flex' }}>
