@@ -1,0 +1,50 @@
+.SingleEvent{
+    margin: 5%;
+    margin-top:15px;
+    
+    width: 90%;
+    background-color: rgba(5, 4, 4, 0.548);
+    border-radius: 2%;
+
+
+}
+
+.SingleEvent img{
+    padding: 1px;
+    max-height: 1000px;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.SingleEvent .About-Slide{
+    position: relative;
+  
+    background-color: rgba(235, 234, 238, 0.479);
+    width: 90%;
+    min-height: 100px;
+    color:black;
+    text-align: center;
+    padding:15px;
+    left: 5%;
+    margin-bottom: 3%;;
+    top: 25px;
+
+}
+
+.CyT{
+    position: relative;
+    background-color: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: -15px;
+}
+
+
+.SingleEvent .About-Slide:hover{
+    
+    background-color: rgb(255, 255, 255);
+}
