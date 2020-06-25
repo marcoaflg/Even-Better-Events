@@ -11,6 +11,7 @@ import Avatar from '@material-ui/core/Avatar';
 import AvatarImg from '../../assets/img/avatar/vinicius.jpeg'
 import EventImg from '../../assets/img/past.events/hackfest.jpeg'
 import PreviewCard from '../../components/CardPreview'
+import Footer from '../../components/Footer'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -91,6 +92,7 @@ function Perfil() {
           </Grid>
         </Grid>
       </div>
+      <Footer />
     </div>
   );
 }
