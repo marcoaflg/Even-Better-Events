@@ -14,7 +14,7 @@ class Slider extends Component {
         return (
             <>
                 <CssBaseline />
-                <Container maxWidth="xl">
+                <Container className="carousel" maxWidth="xl">
                     <Carousel
                         autoPlay
                         infiniteLoop
