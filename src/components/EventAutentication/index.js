@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
     },
@@ -62,11 +61,10 @@ export default function EventAutentication() {
                                 variant="outlined"
                             /></p>
                         <Button
-                            type="submit"
                             fullWidth
                             variant="contained"
                             color="primary"
-                            className={classes.submit}
+                            onClick= {handleClose} /*Adicionar carregamento da confirmação e mensagem de exito ou falha*/
                         >
                             Confirmar
                         </Button>
