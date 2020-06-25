@@ -7,6 +7,7 @@ import Event from './pages/Event';
 import Perfil from './pages/Perfil';
 import DataPage from './pages/DataPage';
 import Certificates from './pages/Certificates';
+import EventManager from './pages/EventManager';
 
 
 const Routes = () => (
@@ -19,6 +20,8 @@ const Routes = () => (
             <Route path="/Perfil" component={Perfil} />
             <Route path="/DataPage" component={DataPage} />
             <Route path="/Certificates" component={Certificates} />
+            <Route path="/EventManager" component={EventManager} />
+
         </ Switch>
     </BrowserRouter>
 );

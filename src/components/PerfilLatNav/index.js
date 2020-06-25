@@ -23,7 +23,7 @@ const Dropdown = ({ show }) =>
     <Link to="/DataPage" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <PersonIcon fontSize="Large" /><br></br>Meus dados</div></ Link>
     <Link to="/Event" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <EventAvailableIcon fontSize="Large" /><br></br>Histórico de eventos</div></ Link>
     <Link to="/Certificates" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <CardMembershipIcon fontSize="Large" /><br></br>Meus certificados</div></Link>
-    <div className="nav-comp2"> <LanguageIcon fontSize="Large" /><br></br>Sei lá o que escrever</div>
+    <Link to="/EventManager" style={{ textDecoration: 'none', color: 'white' }}><div className="nav-comp2"> <LanguageIcon fontSize="Large" /><br></br>Nome do evento que esta ocorrendo</div></ Link>
 
   </div>
 
