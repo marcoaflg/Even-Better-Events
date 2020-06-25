@@ -32,6 +32,7 @@ export default function MiniCard(props) {
                     <Typography gutterBottom variant="h6">
                         {props.title}
                     </Typography>
+                    Recebido: {props.receivedDate}
 
                 </CardContent>
             </CardActionArea>

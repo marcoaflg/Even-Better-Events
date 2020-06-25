@@ -70,6 +70,7 @@ function Perfil() {
                                         title="Hackfest 2019"
                                         link='../../RandomFiles/certificado.txt'
                                         certificateName= 'Certificado.doc'
+                                        receivedDate= "01/01/2020"
                                     />
                                 </Grid>
                                 <Grid item xs={3}>
@@ -78,6 +79,7 @@ function Perfil() {
                                         title="Hackfest 2019"
                                         link='../../RandomFiles/certificado.txt'
                                         certificateName= 'Certificado.doc'
+                                        receivedDate= "02/01/2020"
                                     />
                                 </Grid>
                                 <Grid item xs={3}>
@@ -86,6 +88,7 @@ function Perfil() {
                                         title="Hackfest 2019"
                                         link='../../RandomFiles/certificado.txt'
                                         certificateName= 'Certificado.doc'
+                                        receivedDate= "03/01/2020"
                                     />
                                 </Grid>
                                 <Grid item xs={3}>
@@ -94,6 +97,7 @@ function Perfil() {
                                         title="Hackfest 2019"
                                         link='../../RandomFiles/certificado.txt'
                                         certificateName= 'Certificado.doc'
+                                        receivedDate= "04/01/2020"
                                     />
                                 </Grid>
                             </Grid>
