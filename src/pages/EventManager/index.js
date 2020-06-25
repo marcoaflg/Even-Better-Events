@@ -27,10 +27,17 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         zIndex: "0",
     },
-    avatar: {
-        width: '13vw',
-        height: '13vw',
-        left: '7vw'
+    title: {
+        padding: theme.spacing(2),
+        textAlign: 'Left',
+        color: theme.palette.text.secondary,
+        height: '100%',
+        zIndex: "0",
+        margin: '0',
+    },
+    eventAvatar: {
+        width: '22.5vw',
+        height: '13vw'
     },
 }));
 
@@ -47,27 +54,34 @@ export default function EventManager() {
 
             <div className={classes.root}>
                 <Grid container spacing={1}>
+                    <Grid item lg={12}>
+                        <Paper className={classes.title} ><h1>Hacktober Fest</h1></Paper>
+                    </Grid>
                     <Grid item xs={3}>
-                        <Paper className={classes.paper} >Estudante</Paper>
+                        <img alt="User" className={classes.eventAvatar} src={EventImg} alt=""/>
                     </Grid>
                     <Grid item xs={9}>
-                        <Paper className={classes.paper} >Perfil</Paper>
+                        <Paper className={classes.paper} ><h3>Descrição do Evento<br /> Evento onde os participantes programam uma festa \o/</h3></Paper>
                     </Grid>
                     <Grid item xs={3}>
-                        <Avatar alt="User" className={classes.avatar} src={AvatarImg} />
-                    </Grid>
-                    <Grid item xs={9}>
-                        <Paper className={classes.paper} >Descrição do perfil<br /> Estudante de Engenharia de Software e entusiasta de arduíno e video-games</Paper>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Paper className={classes.paper} >Vinicius Jacik</Paper>
+                        <Paper className={classes.paper} >Criado por: Vinicius Jacik</Paper>
                     </Grid>
                     <Grid item xs={9}>
                         <Paper className={classes.paper} >Redes sociais</Paper>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Paper className={classes.paper} ></Paper>
+                    <Grid item xs={6}>
+                        <Paper className={classes.paper} >Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303. </Paper>
                     </Grid>
+                    <Grid item xs={3}>
+                        <Paper className={classes.paper} >Data: 25/12/2020</Paper>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <Paper className={classes.paper} >Horário: Vide Palestras</Paper>
+                    </Grid>
+                    <Grid item xs={12}>
+                    { /* Colocar aqui palestra com data e horario(inicio/fim), tema, palestrante, descrição, localização (sala, bloco, etc) Fazer um card de preview*/}
+                    </Grid>
+                    
                 </Grid>
             </div>
 
