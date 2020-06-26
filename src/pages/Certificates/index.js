@@ -107,7 +107,7 @@ function Perfil() {
                         <Paper className={classes.paper} >Vinicius Jacik</Paper>
                     </Grid>
                     <Grid item xs={9}>
-                        <Paper className={classes.paper}></Paper>
+                        <Paper className={classes.paper}>Aguardando liberação</Paper>
                     </Grid>
                 </Grid>
             </div>

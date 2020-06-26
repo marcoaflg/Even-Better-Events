@@ -50,6 +50,7 @@ function DataPage() {
               variant="outlined"
             />
           </Grid>
+
           <Grid item xs={12}>
             <TextField
               fullWidth
@@ -110,6 +111,10 @@ function DataPage() {
               type="tel"
               className={classes.textField}
               variant="outlined"
+              inputProps={{
+                maxlength: "9",
+                minlength: "9",
+              }}
             />
           </Grid>
           <Grid item xs={1}>

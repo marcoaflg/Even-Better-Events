@@ -58,7 +58,7 @@ export default function EventManager() {
                         <Paper className={classes.title} ><h1>Hacktober Fest</h1></Paper>
                     </Grid>
                     <Grid item xs={3}>
-                        <img alt="User" className={classes.eventAvatar} src={EventImg} alt=""/>
+                        <img alt="User" className={classes.eventAvatar} src={EventImg} alt="" />
                     </Grid>
                     <Grid item xs={9}>
                         <Paper className={classes.paper} ><h3>Descrição do Evento<br /> Evento onde os participantes programam uma festa \o/</h3></Paper>
@@ -79,9 +79,20 @@ export default function EventManager() {
                         <Paper className={classes.paper} >Horário: Vide Palestras</Paper>
                     </Grid>
                     <Grid item xs={12}>
-                    { /* Colocar aqui palestra com data e horario(inicio/fim), tema, palestrante, descrição, localização (sala, bloco, etc) Fazer um card de preview*/}
+                        <Paper className={classes.paper} >Palestras e detalhes</Paper>{ /* Colocar aqui palestra com data e horario(inicio/fim), tema, palestrante, descrição, localização (sala, bloco, etc) Fazer um card de preview*/}
                     </Grid>
-                    
+                    <Grid item xs={3}>
+                        <Paper className={classes.paper} >Participantes</Paper>
+                    </Grid>
+                    <Grid item xs={9}>
+                        <Paper className={classes.paper} ></Paper>
+                    </Grid>
+
+                    <Grid item xs={3}>
+                        <Paper className={classes.paper} >Adicionar lista de participantes</Paper>
+                    </Grid>
+
+
                 </Grid>
             </div>
 
