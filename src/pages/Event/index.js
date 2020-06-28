@@ -18,7 +18,6 @@ function Event() {
             <LatNav />
             <BlocCards />
             <Footer />
-            
         </div>
     );
 }

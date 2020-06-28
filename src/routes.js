@@ -21,7 +21,6 @@ const Routes = () => (
             <Route path="/DataPage" component={DataPage} />
             <Route path="/Certificates" component={Certificates} />
             <Route path="/EventManager" component={EventManager} />
-
         </ Switch>
     </BrowserRouter>
 );
