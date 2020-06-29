@@ -14,13 +14,13 @@ const Routes = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/SingUp" component={SingUp} />
-            <Route path="/SingIn" component={SingIn} />
-            <Route path="/Event" component={Event} />
-            <Route path="/Perfil" component={Perfil} />
-            <Route path="/DataPage" component={DataPage} />
-            <Route path="/Certificates" component={Certificates} />
-            <Route path="/EventManager" component={EventManager} />
+            <Route exact path="/SingUp" component={SingUp} />
+            <Route exact path="/SingIn" component={SingIn} />
+            <Route exact path="/Event" component={Event} />
+            <Route exact path="/Perfil" component={Perfil} />
+            <Route exact path="/DataPage" component={DataPage} />
+            <Route exact path="/Certificates" component={Certificates} />
+            <Route exact path="/EventManager" component={EventManager} />
         </ Switch>
     </BrowserRouter>
 );
