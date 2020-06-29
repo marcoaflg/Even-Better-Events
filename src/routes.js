@@ -15,7 +15,7 @@ import PageNotFound from './pages/PageNotFound';
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/Home" component={Home} />
             <Route exact path="/HomeIn" component={HomeIn} />
             <Route exact path="/SingUp" component={SingUp} />
             <Route exact path="/SingIn" component={SingIn} />
