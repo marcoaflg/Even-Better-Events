@@ -13,7 +13,7 @@ function SingleEvent() {
 
         <div>
             <div className="SingleEvent">
-                <img src={image6}></img>
+                <img src={image6} alt="Imagem"></img>
                 <div className="CyT">
                     <div> Criado por #USUARIO em #DATA </div>
                     <div> #TittleImagem</div>

@@ -8,6 +8,7 @@ import Perfil from './pages/Perfil';
 import DataPage from './pages/DataPage';
 import Certificates from './pages/Certificates';
 import EventManager from './pages/EventManager';
+import PageNotFound from './pages/PageNotFound';
 
 
 const Routes = () => (
@@ -21,6 +22,7 @@ const Routes = () => (
             <Route exact path="/DataPage" component={DataPage} />
             <Route exact path="/Certificates" component={Certificates} />
             <Route exact path="/EventManager" component={EventManager} />
+            <Route component={PageNotFound} />
         </ Switch>
     </BrowserRouter>
 );

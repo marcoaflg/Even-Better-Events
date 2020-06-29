@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.css';
-import TouchAppIcon from '@material-ui/icons/TouchApp';
 import PersonIcon from '@material-ui/icons/Person';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';

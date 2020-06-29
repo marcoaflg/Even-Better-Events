@@ -6,6 +6,7 @@ import Fade from '@material-ui/core/Fade';
 import TextField from '@material-ui/core/TextField';
 import TouchAppIcon from '@material-ui/icons/TouchApp';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -60,6 +61,7 @@ export default function EventAutentication() {
                                 className={classes.textField}
                                 variant="outlined"
                             /></p>
+                        <Link to="/PageNotFound" style={{ textDecoration: 'none' }}>
                         <Button
                             fullWidth
                             variant="contained"
@@ -68,6 +70,7 @@ export default function EventAutentication() {
                         >
                             Confirmar
                         </Button>
+                        </Link>
                     </div>
                 </Fade>
             </Modal>

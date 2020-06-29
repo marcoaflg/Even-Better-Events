@@ -7,10 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import "../Perfil/styles.css"
-import Avatar from '@material-ui/core/Avatar';
-import AvatarImg from '../../assets/img/avatar/vinicius.jpeg'
 import EventImg from '../../assets/img/past.events/hackfest.jpeg'
-import PreviewCard from '../../components/CardPreview'
 import Footer from '../../components/Footer'
 
 const useStyles = makeStyles((theme) => ({
@@ -58,7 +55,7 @@ export default function EventManager() {
                         <Paper className={classes.title} ><h1>Hacktober Fest</h1></Paper>
                     </Grid>
                     <Grid item xs={3}>
-                        <img alt="User" className={classes.eventAvatar} src={EventImg} alt="" />
+                        <img alt="User" className={classes.eventAvatar} src={EventImg} />
                     </Grid>
                     <Grid item xs={9}>
                         <Paper className={classes.paper} ><h3>Descrição do Evento<br /> Evento onde os participantes programam uma festa \o/</h3></Paper>

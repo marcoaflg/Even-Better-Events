@@ -1,0 +1,7 @@
+#background {
+    height: 100vh;
+    background-image: url(../../assets/img/404_not_found.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
