@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Header from '../../components/Header';
+import HeaderIn from '../../components/HeaderIn';
 import LatNav from '../../components/LatNav';
 import PerfilLatNav from '../../components/PerfilLatNav';
 import { makeStyles } from '@material-ui/core/styles';
@@ -45,7 +45,7 @@ export default function EventManager() {
 
     return (
         <div>
-            <Header />
+            <HeaderIn />
             <LatNav />
             <PerfilLatNav />
 

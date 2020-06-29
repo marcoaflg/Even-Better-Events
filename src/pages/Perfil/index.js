@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Header from '../../components/Header';
+import HeaderIn from '../../components/HeaderIn';
 import LatNav from '../../components/LatNav';
 import PerfilLatNav from '../../components/PerfilLatNav';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,7 +8,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import "../Perfil/styles.css"
 import Avatar from '@material-ui/core/Avatar';
-import AvatarImg from '../../assets/img/avatar/vinicius.jpeg'
+import AvatarImg from '../../assets/img/avatar/marco.jpg'
 import EventImg from '../../assets/img/past.events/hackfest.jpeg'
 import PreviewCard from '../../components/CardPreview'
 import Footer from '../../components/Footer'
@@ -40,7 +40,7 @@ function Perfil() {
 
   return (
     <div className="Perfil">
-      <Header />
+      <HeaderIn />
       <LatNav />
       <PerfilLatNav />
 

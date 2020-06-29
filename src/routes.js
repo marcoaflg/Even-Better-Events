@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import HomeIn from './pages/HomeIn';
 import SingUp from './pages/SingUp';
 import SingIn from './pages/SingIn';
 import Event from './pages/Event';
@@ -15,6 +16,7 @@ const Routes = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/HomeIn" component={HomeIn} />
             <Route exact path="/SingUp" component={SingUp} />
             <Route exact path="/SingIn" component={SingIn} />
             <Route exact path="/Event" component={Event} />
