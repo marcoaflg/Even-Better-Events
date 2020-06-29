@@ -123,7 +123,7 @@ export default function Header(props) {
                         </Menu>
                         <Tooltip title="Home" placement="bottom">
                             <Typography className={classes.title} variant="h6" noWrap>
-                                <a href="/Home" onClick={<img src={Logo} alt="logo" />}>
+                                <a href="/" onClick={<img src={Logo} alt="logo" />}>
                                     <img src={Logo} alt="logo" />
                                 </a>
                             </Typography>
