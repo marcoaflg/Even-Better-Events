@@ -196,6 +196,42 @@ function DataPage() {
             />
           </Grid>
           <Grid item xs={3}>
+            <TextField
+              fullWidth
+              placeholder="Instagram"
+              label="Instagram"
+              className={classes.textField}
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={3}>
+            <TextField
+              fullWidth
+              placeholder="Facebook"
+              label="Facebook"
+              className={classes.textField}
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={3}>
+            <TextField
+              fullWidth
+              placeholder="Twitter"
+              label="Twitter"
+              className={classes.textField}
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={3}>
+            <TextField
+              fullWidth
+              placeholder="LinkedIn"
+              label="LinkedIn"
+              className={classes.textField}
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={3}>
             <Button
               type="submit"
               fullWidth
@@ -219,6 +255,7 @@ function DataPage() {
               Salvar Alterações
           </Button>
           </Grid>
+          
         </Grid>
       </div>
       

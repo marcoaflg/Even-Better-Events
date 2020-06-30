@@ -43,7 +43,7 @@ export default class Parent extends React.Component {
   render() {
 
     return (
-      <div className="LatNav2" style={{ zIndex: this.state.dropdownVisible ? "1" : "0" }}>
+      <div className="LatNav2" style={{ zIndex: this.state.dropdownVisible ? "1" : "-1" }}>
         
         <Dropdown show={this.state.dropdownVisible} />
         <NavButton onClick={this.toggleDropdown} />
