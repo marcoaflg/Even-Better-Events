@@ -11,6 +11,7 @@ import Avatar from '@material-ui/core/Avatar';
 import AvatarImg from '../../assets/img/avatar/marco.jpg'
 import MiniCard from '../../components/MiniCard'
 import hackfestImg from '../../assets/img/past.events/hackfest.jpeg'
+import {Events} from '../../DataBaseExemplo/Events'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -67,7 +68,7 @@ function Perfil() {
                                 <Grid item xs={3} >
                                     <MiniCard 
                                         image= {hackfestImg}
-                                        title="Hackfest 2019"
+                                        title= {Events[0].Name}
                                         link='../../RandomFiles/certificado.txt'
                                         certificateName= 'Certificado.doc'
                                         receivedDate= "01/01/2020"

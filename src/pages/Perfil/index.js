@@ -12,6 +12,7 @@ import AvatarImg from '../../assets/img/avatar/marco.jpg'
 import EventImg from '../../assets/img/past.events/hackfest.jpeg'
 import PreviewCard from '../../components/CardPreview'
 import Footer from '../../components/Footer'
+import {Events} from '../../DataBaseExemplo/Events'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     width: '13vw',
-    height: '13vw',
-    left: '7vw'
+    height: 'auto',
+    left: '5vw'
   },
 }));
 
@@ -59,7 +60,7 @@ function Perfil() {
             <Paper className={classes.paper} >Descrição do perfil<br /> Estudante de Engenharia de Software e entusiasta de arduíno e video-games</Paper>
           </Grid>
           <Grid item xs={3}>
-            <Paper className={classes.paper} >Vinicius Jacik</Paper>
+            <Paper className={classes.paper} >Marco Garcia</Paper>
           </Grid>
           <Grid item xs={9}>
             <Paper className={classes.paper} >Redes sociais</Paper>
@@ -67,25 +68,30 @@ function Perfil() {
           <Grid item xs={12}>
             <Paper className={classes.paper} style={{ display: 'flex' }}>
               <Grid item xs={12} container direction="row" spacing={2}>
+
                 <PreviewCard
-                  alt="Hacktober fest"
-                  img={EventImg}
-                  title="Hacktober Fest 2019"
+                  alt={Events[0].Name}
+                  img={Events[0].Image}
+                  title={Events[0].Name}
+                  description= {Events[0].Description}
                 />
                 <PreviewCard
-                  alt="test"
-                  img={EventImg}
-                  title="test"
+                  alt={Events[1].Name}
+                  img={Events[1].Image}
+                  title={Events[1].Name}
+                  description= {Events[1].Description}
                 />
                 <PreviewCard
-                  alt="test"
-                  img={EventImg}
-                  title="test"
+                  alt={Events[2].Name}
+                  img={Events[2].Image}
+                  title={Events[2].Name}
+                  description= {Events[2].Description}
                 />
                 <PreviewCard
-                  alt="test"
-                  img={EventImg}
-                  title="test"
+                  alt={Events[3].Name}
+                  img={Events[3].Image}
+                  title={Events[3].Name}
+                  description= {Events[3].Description}
                 />
               </Grid>
             </Paper>

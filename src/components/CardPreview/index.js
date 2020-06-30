@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 import InputIcon from '@material-ui/icons/Input';
 
+
 const useStyles = makeStyles({
   root: {
     maxWidth: '200px',
@@ -32,10 +33,10 @@ export default function ImgMediaCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Hacktober Fest 2019
+          {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Uma puta festa de programação
+            {props.description}
           </Typography>
         </CardContent>
       </CardActionArea>
