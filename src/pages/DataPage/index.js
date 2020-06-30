@@ -2,7 +2,6 @@ import React from 'react';
 import './styles.css';
 import HeaderIn from '../../components/HeaderIn';
 import LatNav from '../../components/LatNav';
-import PerfilLatNav from '../../components/PerfilLatNav';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -30,8 +29,7 @@ function DataPage() {
 
     <div className="Perfil">
       <HeaderIn />
-      <LatNav />
-      <PerfilLatNav />
+      <LatNav /> 
 
       <div className={classes.root}>
         <Grid container spacing={1}>

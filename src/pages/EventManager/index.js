@@ -2,7 +2,6 @@ import React from 'react';
 import './styles.css';
 import HeaderIn from '../../components/HeaderIn';
 import LatNav from '../../components/LatNav';
-import PerfilLatNav from '../../components/PerfilLatNav';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -47,7 +46,7 @@ export default function EventManager() {
         <div>
             <HeaderIn />
             <LatNav />
-            <PerfilLatNav />
+
 
             <div className={classes.root}>
                 <Grid container spacing={1}>

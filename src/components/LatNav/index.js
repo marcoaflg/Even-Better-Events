@@ -42,10 +42,13 @@ export default class Parent extends React.Component {
 
   render() {
     return (
-      <div className="LatNav" style={{ zIndex: this.state.dropdownVisible ? "0" : "1" }}>
-        <Dropdown show={this.state.dropdownVisible} />
-        <NavButton onClick={this.toggleDropdown} />
+      <div>
+        <div className="LatNav" style={{ zIndex: this.state.dropdownVisible ? "-1" : "1" }}>
+          <Dropdown show={this.state.dropdownVisible} />
+          
 
+        </div>
+        <NavButton onClick={this.toggleDropdown} />
       </div>
     );
   }

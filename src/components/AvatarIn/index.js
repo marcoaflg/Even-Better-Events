@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from '@material-ui/core/Fade';
 import Avatar from '@material-ui/core/Avatar';
-import marcoAvatar from '../../assets/img/avatar/marco.jpg';
+import {AuthSettings, Users} from '../../DataBaseExemplo/Users'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +43,7 @@ export default function AvatarIn() {
     return (
         <div>
             <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
-                <Avatar alt="Avatar" src={marcoAvatar} className={classes.large} />
+                <Avatar alt="Avatar" src={Users[AuthSettings.UserId].Image} className={classes.large} />
             </Button>
             <Menu
                 id="fade-menu"

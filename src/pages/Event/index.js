@@ -6,10 +6,7 @@ import BlocCards from '../../components/Cards/BlocCards';
 import Footer from '../../components/Footer'
 import SingleEvent from '../../components/SingleEvent'
 
-
-function Event() {
-
-   
+function Event() { 
 
     return (
         <div>
