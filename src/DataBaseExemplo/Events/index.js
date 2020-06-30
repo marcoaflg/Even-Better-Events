@@ -23,10 +23,10 @@ export const Events = [
 		id: 2,
 		Name: 'Empreendedorismo',
 		Description: 'Um evento sobre empreendedorismo',
-        Image:'../../assets/img/past.events/empreendedorismo.jpeg',
+        Image: '../../assets/img/past.events/empreendedorismo.jpeg',
         StartingDate: '03/03/2020/',
         EndingDate:'03/03/2020',
-
+        /*../../assets/img/past.events/empreendedorismo.jpeg*/
     },
     {
 		id: 3,
