@@ -7,6 +7,7 @@ import SingIn from './pages/SingIn';
 import Event from './pages/Event';
 import Perfil from './pages/Perfil';
 import DataPage from './pages/DataPage';
+import CodeGenerator from './pages/EventAuthenticationCodeGenerator';
 
 import EventManager from './pages/EventManager';
 import PageNotFound from './pages/PageNotFound';
@@ -23,6 +24,7 @@ const Routes = () => (
             <Route exact path="/Perfil" component={Perfil} />
             <Route exact path="/DataPage" component={DataPage} />
             <Route exact path="/EventManager" component={EventManager} />
+            <Route exact path="/CodeGenerator" component={CodeGenerator} />
             <Route component={PageNotFound} />
         </ Switch>
     </BrowserRouter>
