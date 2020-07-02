@@ -14,7 +14,47 @@ import Brazil from '../../assets/img/flags/icons8-brasil-50.png';
 import Argentina from '../../assets/img/flags/icons8-argentina-50.png';
 import EUA from '../../assets/img/flags/icons8-eua-50.png';
 import Logo from '../../assets/img/logoebevetor1.png';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { Slide } from "@material-ui/core";
+
+function getScrollY(scroller) {
+    return scroller.pageYOffset !== undefined
+        ? scroller.pageYOffset
+        : scroller.scrollTop !== undefined
+            ? scroller.scrollTop
+            : (document.documentElement || document.body.parentNode || document.body)
+                .scrollTop;
+}
+
+const useHideOnScroll = options => {
+    const { threshold, scroller } = options;
+
+    const scrollRef = React.useRef();
+    const [hide, setHide] = React.useState(false);
+
+    const handleScroll = React.useCallback(() => {
+        const scrollY = getScrollY(scroller || window);
+        const prevScrollY = scrollRef.current;
+        scrollRef.current = scrollY;
+
+        setHide(
+            scrollY < prevScrollY
+                ? false
+                : scrollY > prevScrollY &&
+                    scrollY > (threshold != null ? threshold : 100)
+                    ? true
+                    : false
+        );
+    }, [scroller, threshold]);
+
+    React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [handleScroll]);
+
+    return hide;
+};
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -74,21 +114,14 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-function ElevationScroll(props) {
-    const { children, window } = props;
-
-    const trigger = useScrollTrigger({
-      disableHysteresis: true,
-      threshold: 0,
-      target: window ? window() : undefined,
-    });
-  
-    return React.cloneElement(children, {
-      elevation: trigger ? 4 : 0,
-    });
-  }
 
 export default function Header(props) {
+
+
+    const { children, threshold, scroller, ...other } = props;
+
+    const hide = useHideOnScroll({ threshold, scroller });
+
     const classes = useStyles();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -103,8 +136,8 @@ export default function Header(props) {
     
     return (
         <div className={classes.root}>
-            <ElevationScroll {...props}>
-                <AppBar position="static">
+            <Slide direction="down" appear={false} in={!hide} {...other}>
+                <AppBar>
                     <Toolbar>
                         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                             <img src={Brazil} alt="Brazil" />
@@ -149,7 +182,7 @@ export default function Header(props) {
                         </Link>
                     </Toolbar>
                 </AppBar>
-            </ElevationScroll>
+                </Slide>
         </div>
     );
 }

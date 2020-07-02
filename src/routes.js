@@ -22,7 +22,6 @@ const Routes = () => (
             <Route exact path="/Event" component={Event} />
             <Route exact path="/Perfil" component={Perfil} />
             <Route exact path="/DataPage" component={DataPage} />
-            
             <Route exact path="/EventManager" component={EventManager} />
             <Route component={PageNotFound} />
         </ Switch>

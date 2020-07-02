@@ -54,7 +54,7 @@ export default function AvatarIn() {
                 TransitionComponent={Fade}
             >
                 <MenuItem onClick={handleClose}><Link to="/Perfil" style={{ textDecoration: 'none', color: 'white' }}>Perfil</Link></MenuItem>
-                <MenuItem onClick={handleClose}><Link to="/Event" style={{ textDecoration: 'none', color: 'white' }}>Meus Eventos</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link to="/EventManager" style={{ textDecoration: 'none', color: 'white' }}>Meus Eventos</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Sair</Link></MenuItem>
             </Menu>
         </div>
