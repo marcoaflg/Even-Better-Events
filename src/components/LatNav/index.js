@@ -6,6 +6,8 @@ import Arrow from '@material-ui/icons/ArrowForwardIos';
 import { Link } from 'react-router-dom';
 import EventAutentication from '../EventAutentication'
 
+import GoTop from '../GoTop'
+
 const NavButton = ({ onClick }) =>
   <button className="nav-but"
     onClick={onClick}>
@@ -38,6 +40,7 @@ export default class Parent extends React.Component {
   render() {
     return (
       <div>
+        <GoTop />
         <div className="LatNav" style={{ zIndex: this.state.dropdownVisible ? "-1" : "1" }}>
           <Dropdown show={this.state.dropdownVisible} />
 

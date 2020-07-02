@@ -15,6 +15,7 @@ import Argentina from '../../assets/img/flags/icons8-argentina-50.png';
 import EUA from '../../assets/img/flags/icons8-eua-50.png';
 import Logo from '../../assets/img/logoebevetor1.png';
 import { Slide } from "@material-ui/core";
+import GoTop from '../GoTop';
 
 function getScrollY(scroller) {
     return scroller.pageYOffset !== undefined
@@ -136,6 +137,7 @@ export default function Header(props) {
     
     return (
         <div className={classes.root}>
+            <GoTop />
             <Slide direction="down" appear={false} in={!hide} {...other}>
                 <AppBar>
                     <Toolbar>

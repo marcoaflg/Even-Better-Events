@@ -10,12 +10,14 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
+import './index.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
     position: "fixed",
     bottom: theme.spacing(2),
-    right: theme.spacing(2)
+    right: theme.spacing(0.2)
+    
   }
 }));
 
@@ -61,6 +63,7 @@ ScrollTop.propTypes = {
 
 export default function GoTop(props) {
   return (
+    <div className="GoTop">
     <React.Fragment>
       
       <Toolbar id="back-to-top-anchor" />
@@ -71,5 +74,6 @@ export default function GoTop(props) {
         </Fab>
       </ScrollTop>
     </React.Fragment>
+    </div>
   );
 }
