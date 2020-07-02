@@ -2,7 +2,7 @@
 
 .LatNav{
   position: fixed;
-  bottom: 14.2%;
+  bottom: 18.5%;
   right: 0%;
   /*background-image: url(./Components/img/teste.png);*/
   /*ackground-color: red;*/
@@ -22,14 +22,14 @@
   width: 35px;
   position: fixed;
   right: 2px;
-  background-color: rgb(17, 140, 105,0.5);
+  background-color: #004d40;
   z-index: 1;
-  bottom: 11%;
+  bottom: 14%;
 }
 
 .nav-but:hover{
   background-color: rgb(102, 179, 77);
-  transform: rotate(180deg);
+  
   
 }
 
@@ -39,7 +39,7 @@
   position: relative;
   right: 0px;
   text-align: center;
-  background-color: rgb(17, 140, 105,0.5);
+  background-color: #004d40;
   min-height: 90px;
   width: 90px;
   margin: 2px;

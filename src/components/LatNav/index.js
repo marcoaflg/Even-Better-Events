@@ -15,7 +15,7 @@ const NavButton = ({ onClick }) =>
   </button>
 
 const Dropdown = ({ show }) =>
-  <div style={{ visibility: show ? "hidden" : "visible" }}>
+  <div style={{ visibility: show ? "visible" : "hidden" }}>
 
 
     <div className="nav-comp"> <EventAutentication /></div>
@@ -41,7 +41,7 @@ export default class Parent extends React.Component {
     return (
       <div>
         <GoTop />
-        <div className="LatNav" style={{ zIndex: this.state.dropdownVisible ? "-1" : "1" }}>
+        <div className="LatNav" style={{ zIndex: this.state.dropdownVisible ? "6" : "-1" }}>
           <Dropdown show={this.state.dropdownVisible} />
 
 

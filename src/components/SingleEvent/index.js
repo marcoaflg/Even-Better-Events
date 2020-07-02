@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
-import image6 from '../../assets/img/past.events/frontendday.png'
+import image6 from '../../assets/img/past.events/frontendday.png';
+import Palestrantes from '../Palestrantes';
 
 
 function SingleEvent() {
@@ -24,8 +25,8 @@ function SingleEvent() {
 
             </div>
             <div className="Palestras">
-                
-        </div>
+                <Palestrantes />
+            </div>
         </div>
 
 
