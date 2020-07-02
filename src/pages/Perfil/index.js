@@ -66,17 +66,21 @@ function Perfil() {
           <Grid item xs={9}>
             <Paper className={classes.paper} >Redes sociais</Paper>
           </Grid>
+
           <Typography gutterBottom variant="h5" component="h2" noWrap>
             Eventos recentes
           </Typography>
+
           <Grid item xs={12}>
 
             <EventList />
 
           </Grid>
+
           <Typography gutterBottom variant="h5" component="h2" noWrap>
             Certificados
           </Typography>
+          
           <Grid item xs={12}>
 
             <CertificateList />

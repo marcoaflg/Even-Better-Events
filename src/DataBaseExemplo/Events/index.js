@@ -8,6 +8,10 @@ export const Events = [
         Image: 'https://www.jenkins.io/images/hacktoberfest/2019_social.png',
         StartingDate: '01/10/2019/',
         EndingDate:'02/10/2019',
+        CreatedBy: 'User',
+        adress: 'Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303.',
+        Schedule:'Vide palestras',
+        Participantes: '0, 1, 2, 3',
 
     },
     {
@@ -17,6 +21,10 @@ export const Events = [
         Image: 'https://secure.meetupstatic.com/photos/event/b/3/d/e/highres_488806046.jpeg',
         StartingDate: '01/02/2020/',
         EndingDate:'02/02/2020',
+        CreatedBy: 'user',
+        adress: 'Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303.',
+        Schedule:'Vide palestras',
+        Participantes: '0, 1, 2, 3',
 
     },
     {
@@ -27,6 +35,10 @@ export const Events = [
         StartingDate: '03/03/2020/',
         EndingDate:'03/03/2020',
         /*../../assets/img/past.events/empreendedorismo.jpeg*/
+        CreatedBy: 'user',
+        adress: 'Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303.',
+        Schedule:'Vide palestras',
+        Participantes: '0, 1, 2, 3',
     },
     {
 		id: 3,
@@ -35,6 +47,10 @@ export const Events = [
         Image: '../../assets/img/past.events/esportes.natureza.jpeg',
         StartingDate: '01/02/2020/',
         EndingDate:'02/02/2020',
+        CreatedBy: 'user',
+        adress: 'Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303.',
+        Schedule:'Vide palestras',
+        Participantes: '0, 1, 2, 3',
 
     },
     {
@@ -44,6 +60,10 @@ export const Events = [
         Image: '../../assets/img/past.events/gdgfoz.jpeg',
         StartingDate: '01/02/2020/',
         EndingDate:'02/02/2020',
+        CreatedBy: 'user',
+        adress: 'Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303.',
+        Schedule:'Vide palestras',
+        Participantes: '0, 1, 2, 3',
 
     },
     {
@@ -53,6 +73,10 @@ export const Events = [
         Image: '../../assets/img/past.events/InteligentHub.jpg',
         StartingDate: '01/02/2020/',
         EndingDate:'02/02/2020',
+        CreatedBy: 'user',
+        adress: 'Endereço: Av. das Cataratas, 1118 - Vila Yolanda, Foz do Iguaçu - PR, 85853-000, Sala: 303.',
+        Schedule:'Vide palestras',
+        Participantes: '0, 1, 2, 3',
 
     },
     
