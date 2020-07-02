@@ -2,7 +2,7 @@
 
 .LatNav{
   position: fixed;
-  bottom: 5%;
+  bottom: 14.2%;
   right: 0%;
   /*background-image: url(./Components/img/teste.png);*/
   /*ackground-color: red;*/
@@ -12,6 +12,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   z-index: 1;
+  
   
 }
 .nav-but{
@@ -23,7 +24,7 @@
   right: 2px;
   background-color: rgb(17, 140, 105,0.5);
   z-index: 1;
-  bottom: 5px;
+  bottom: 11%;
 }
 
 .nav-but:hover{
