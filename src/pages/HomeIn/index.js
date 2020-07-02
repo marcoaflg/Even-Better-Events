@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import HeaderIn from '../../components/HeaderIn';
+import Header from '../../components/Header';
 import Slider from '../../components/Slider';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LatNav from '../../components/LatNav';
@@ -10,7 +10,7 @@ import CardBlock from '../../components/Cards/BlocCards.js'
 function HomeIn() {
     return (
         <div className="HomeIn">
-            <HeaderIn />
+            <Header />
             <LatNav />
             <Slider />
            

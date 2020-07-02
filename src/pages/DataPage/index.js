@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import HeaderIn from '../../components/HeaderIn';
+import Header from '../../components/Header';
 import LatNav from '../../components/LatNav';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
@@ -28,7 +28,7 @@ function DataPage() {
   return (
 
     <div className="Perfil">
-      <HeaderIn />
+      <Header />
       <LatNav /> 
 
       <div className={classes.root}>
