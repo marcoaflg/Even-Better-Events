@@ -24,7 +24,7 @@ function SingleEvent() {
 
             </div>
             <div className="Palestras">
-                Palestras
+                
         </div>
         </div>
 

@@ -11,8 +11,9 @@ function HomeIn() {
     return (
         <div className="HomeIn">
             <HeaderIn />
-            <Slider />
             <LatNav />
+            <Slider />
+           
             <CardBlock />
             <Footer />
         </div>

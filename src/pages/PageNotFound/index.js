@@ -9,8 +9,9 @@ function PageNotFound() {
     return (
         <div>
             <Header />
-            <ErrorPage />
             <LatNav />
+            <ErrorPage />
+          
             <Footer />
         </div>
     );

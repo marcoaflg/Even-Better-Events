@@ -10,8 +10,9 @@ function Home() {
   return (
     <div className="Home">
       <Header />
-      <Slider />
       <LatNav />
+      <Slider />
+     
       <CardBlock />
       <Footer />
     </div>
