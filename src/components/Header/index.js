@@ -12,7 +12,6 @@ export default function Header() {
     }
     else {
         return (
-
             <HeaderGuest />
         )
     }

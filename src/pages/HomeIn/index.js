@@ -12,8 +12,7 @@ function HomeIn() {
         <div className="HomeIn">
             <Header />
             <LatNav />
-            <Slider />
-           
+            <Slider />           
             <CardBlock />
             <Footer />
         </div>

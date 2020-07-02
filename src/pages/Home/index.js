@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Header from '../../components/Header';
+import HeaderGuest from '../../components/HeaderGuest';
 import Slider from '../../components/Slider';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LatNav from '../../components/LatNav';
@@ -9,10 +9,9 @@ import CardBlock from '../../components/Cards/BlocCards.js'
 function Home() {
   return (
     <div className="Home">
-      <Header />
+      <HeaderGuest />
       <LatNav />
-      <Slider />
-     
+      <Slider />     
       <CardBlock />
       <Footer />
     </div>

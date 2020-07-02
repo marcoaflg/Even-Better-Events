@@ -10,8 +10,7 @@ function PageNotFound() {
         <div>
             <Header />
             <LatNav />
-            <ErrorPage />
-          
+            <ErrorPage />         
             <Footer />
         </div>
     );
