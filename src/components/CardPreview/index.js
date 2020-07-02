@@ -13,7 +13,7 @@ import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: '200px',
+    maxWidth: '210px',
     marginLeft:'1vw',
   },
 });
@@ -28,6 +28,7 @@ export default function ImgMediaCard(props) {
           component="img"
           alt={props.alt}
           height="120"
+          width="120"
           src= {props.img}
           title={props.title}
         />

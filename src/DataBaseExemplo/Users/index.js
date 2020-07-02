@@ -1,6 +1,6 @@
 export  let AuthSettings = {
     
-    LoggedIn: true, /*Não sei porque adicionei isso */
+    LoggedIn: true, /* Alterar aqui para ver header logado ou visitante */
     UserId:'0', /*Altere aqui pra carregar outros perfis */
 
 }

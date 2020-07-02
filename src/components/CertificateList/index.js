@@ -1,5 +1,5 @@
 import React from 'react'
-import PreviewCard from '../CardPreview'
+import MiniCard from '../MiniCard'
 import { AuthSettings, Users } from '../../DataBaseExemplo/Users'
 import { Events } from '../../DataBaseExemplo/Events'
 import Grid from '@material-ui/core/Grid';
@@ -17,18 +17,20 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export default function EventList() {
+
+export default function CertificateList() {
 
     const items = []
 
     for (let index = 0; index < 6; index++) {
         items.push(
-            <PreviewCard
-                alt={Events[index].Name}
-                img={Events[index].Image}
-                title={Events[index].Name}
-                description={Events[index].Description}
-            />
+            <MiniCard
+                    image={Events[index].Image}
+                    title={Events[index].Name}
+                    link='../../RandomFiles/certificado.txt'
+                    certificateName='Certificado.doc'
+                    receivedDate="01/01/2020"
+                  />
         )
     }
 
@@ -36,9 +38,9 @@ export default function EventList() {
 
     return (
         <Paper className={classes.paper} >
-            <Grid item xs={12} container direction="row" spacing={2}>
-                {items}
-            </Grid>
+        <Grid item xs={12} container direction="row" spacing={2}>
+            {items}
+        </Grid>
         </Paper>
     )
 }
