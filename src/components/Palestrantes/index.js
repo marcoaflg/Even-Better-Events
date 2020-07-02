@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './index.css';
+import InfoP from './infoP.js'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -80,22 +81,22 @@ export default function Palestrantes() {
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0}>
-                    Call a function where is this palestrante
-      </TabPanel>
+                    <InfoP />
+                </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Call a function where is this palestrante
-      </TabPanel>
+                    <InfoP />
+                </TabPanel>
                 <TabPanel value={value} index={2}>
-                    Call a function where is this palestrante
-      </TabPanel>
+                    <InfoP />
+                </TabPanel>
                 <TabPanel value={value} index={3}>
-                    Call a function where is this palestrante      </TabPanel>
+                    <InfoP />      </TabPanel>
                 <TabPanel value={value} index={4}>
-                    Call a function where is this palestrante      </TabPanel>
+                    <InfoP />     </TabPanel>
                 <TabPanel value={value} index={5}>
-                    Call a function where is this palestrante      </TabPanel>
+                    <InfoP />    </TabPanel>
                 <TabPanel value={value} index={6}>
-                    Call a function where is this palestrante      </TabPanel>
+                    <InfoP />    </TabPanel>
             </div>
         </div>
     );
