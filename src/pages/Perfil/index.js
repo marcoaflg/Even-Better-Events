@@ -13,6 +13,7 @@ import { Events } from '../../DataBaseExemplo/Events'
 import { AuthSettings, Users } from '../../DataBaseExemplo/Users'
 import MiniCard from '../../components/MiniCard'
 import hackfestImg from '../../assets/img/past.events/hackfest.jpeg'
+import EventList from '../../components/EventList'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 20,
     marginLeft: '3vw',
     marginRight: '3vw',
+    marginTop: '2%',
   },
   paper: {
     padding: theme.spacing(2),
@@ -68,33 +70,9 @@ function Perfil() {
 
           <Grid item xs={12}>
             <Paper className={classes.paper} style={{ display: 'flex' }}>
-              <Grid item xs={12} container direction="row" spacing={2}>
 
-                <PreviewCard
-                  alt={Events[0].Name}
-                  img={Events[0].Image}
-                  title={Events[0].Name}
-                  description={Events[0].Description}
-                />
-                <PreviewCard
-                  alt={Events[1].Name}
-                  img={Events[1].Image}
-                  title={Events[1].Name}
-                  description={Events[1].Description}
-                />
-                <PreviewCard
-                  alt={Events[2].Name}
-                  img={Events[2].Image}
-                  title={Events[2].Name}
-                  description={Events[2].Description}
-                />
-                <PreviewCard
-                  alt={Events[3].Name}
-                  img={Events[3].Image}
-                  title={Events[3].Name}
-                  description={Events[3].Description}
-                />
-              </Grid>
+                <EventList />
+
             </Paper>
           </Grid>
           <Grid item xs={12}>
